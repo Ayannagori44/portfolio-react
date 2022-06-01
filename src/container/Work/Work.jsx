@@ -58,7 +58,7 @@ const Work = () => {
         {filterWork.map((work, index) => (
           <div className="app__work-item app__flex" key={index}>
             <div className="app__work-img">
-              <img src={"https://dummyimage.com/640x4:3"} alt={work.name} />
+              <img src={work.imgname} alt={work.name} />
 
               <motion.div
                 whileHover={{ opacity: [0, 1] }}
@@ -103,7 +103,9 @@ const Work = () => {
               </p>
 
               <div className="app__work-tag app__flex">
-                <p className="p-text">{work.tags[0]}</p>
+                <p className="p-text">
+                  {work.tags.length > 1 ? work.tags[1] : work.tags[0]}
+                </p>
               </div>
             </div>
           </div>

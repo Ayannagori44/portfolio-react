@@ -1,7 +1,7 @@
 export const data = [
   {
-    name: "flutter",
-    bgColor: "#ff7283",
+    name: "sass",
+    bgColor: "#97caef",
   },
   {
     name: "figma",
@@ -9,26 +9,26 @@ export const data = [
   },
   {
     name: "graphql",
-    bgColor: "#faf6aa",
+    bgColor: "#3feee6",
   },
   {
     name: "html",
-    bgColor: "#aaf974",
+    bgColor: "#C0DFD9",
   },
   {
     name: "css",
-    bgColor: "#ab934f",
+    bgColor: "#41b3a3",
   },
   {
     name: "javascript",
-    bgColor: "#af42f9",
+    bgColor: "#545B5A",
   },
   {
     name: "react",
-    bgColor: "#786234",
+    bgColor: "#2f2fa2",
   },
   {
     name: "node",
-    bgColor: "#23fa78",
+    bgColor: "#E9ECE6",
   },
 ];

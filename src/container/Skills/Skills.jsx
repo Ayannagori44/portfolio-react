@@ -10,7 +10,6 @@ import ReactTooltip from "react-tooltip";
 import "./Skills.scss";
 
 const Skills = () => {
-  // const [showTooltip, setshowTooltip] = useState(null);
   const [experiences, setExperiences] = useState([]);
   const [skills, setSkills] = useState([]);
 
@@ -60,17 +59,11 @@ const Skills = () => {
                       data-tip
                       data-for={work.name}
                       onMouseLeave={(e) =>
-                        console.log(
-                          e.currentTarget.nextElementSibling.classList.add(
-                            "HIDE"
-                          )
-                        )
+                        e.currentTarget.nextElementSibling.classList.add("HIDE")
                       }
                       onMouseEnter={(e) =>
-                        console.log(
-                          e.currentTarget.nextElementSibling.classList.remove(
-                            "HIDE"
-                          )
+                        e.currentTarget.nextElementSibling.classList.remove(
+                          "HIDE"
                         )
                       }
                     >
@@ -97,4 +90,4 @@ const Skills = () => {
   );
 };
 
-export default AppWrap(Skills, "skills");
+export default AppWrap(Skills, "skills", "app__skills");
