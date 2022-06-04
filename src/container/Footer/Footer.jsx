@@ -10,23 +10,37 @@ const Footer = () => {
   const currentTooltip = useRef(null);
 
   const copyText = function (e) {
-    let currentParent = e.currentTarget;
-    let text = currentParent.children[1].textContent;
+    let parentDiv = e.currentTarget;
+    let button = parentDiv.children[1];
     let textArea = document.createElement("textarea");
-    textArea.setAttribute("readonly", "");
+    let ptags = [...button.children];
 
+    // copy text
+    textArea.setAttribute("readonly", "");
     textArea.style.position = "absolute";
     textArea.style.top = "0";
     textArea.style.opacity = "0";
-    textArea.value = currentParent.children[1].textContent;
+    textArea.value = button.textContent;
     document.body.appendChild(textArea);
     textArea.select();
     document.execCommand("copy");
 
-    currentParent.children[1].textContent = "Text Copied!";
+    // add particle
+    let lottie = parentDiv.children[2];
+    lottie.play();
+
+    // toggle between info to text copied
+    ptags.forEach((el) => el.classList.add("active"));
+
+    // prevent spam
+    parentDiv.style.pointerEvents = "none";
+
     setTimeout(() => {
-      currentParent.children[1].textContent = text;
-    }, 1000);
+      ptags.forEach((el) => el.classList.remove("active"));
+
+      parentDiv.style.pointerEvents = "all";
+      lottie.stop();
+    }, 2500);
   };
 
   return (
@@ -34,48 +48,43 @@ const Footer = () => {
       <h2 className="head-text">Take a coffee & chat with me</h2>
 
       <div className="app__footer-cards">
-        <div
-          className="app__footer-card"
-          data-tip="Tap to copy"
-          data-for="tooltip"
-          onClick={(e) => {
-            copyText(e);
-          }}
-          onMouseEnter={() => {
-            ReactTooltip.show();
-            currentTooltip.current.tooltipRef.style.opacity = 1;
-          }}
-          onMouseLeave={() => {
-            currentTooltip.current.tooltipRef.style.opacity = 0;
-          }}
-        >
-          <img src={images.email} alt="email" />
-          <a href="" className="p-text" onClick={(e) => e.preventDefault()}>
-            ayannagori44@gmail.com
-          </a>
-        </div>
-        <div
-          className="app__footer-card"
-          data-tip="Tap to copy"
-          data-for="tooltip"
-          onClick={(e) => {
-            copyText(e);
-          }}
-          onMouseEnter={() => {
-            ReactTooltip.show();
-            currentTooltip.current.tooltipRef.style.opacity = 1;
-          }}
-          onMouseLeave={() => {
-            ReactTooltip.hide(
-              (currentTooltip.current.tooltipRef.style.opacity = 0)
-            );
-          }}
-        >
-          <img src={images.mobile} alt="phone" />
-          <a href="" className="p-text" onClick={(e) => e.preventDefault()}>
-            +91 9870699786
-          </a>
-        </div>
+        {["mobile", "email"].map((el) => {
+          return (
+            <div
+              key={el}
+              className="app__footer-card"
+              data-tip="Tap to copy"
+              data-for="tooltip"
+              onClick={(e) => copyText(e)}
+              onMouseEnter={() => {
+                ReactTooltip.show();
+                currentTooltip.current.tooltipRef.style.opacity = 1;
+              }}
+              onMouseLeave={() =>
+                (currentTooltip.current.tooltipRef.style.opacity = 0)
+              }
+            >
+              <img
+                src={images[el === "mobile" ? "mobile" : "email"]}
+                alt={el}
+              />
+              <h6 className="p-text btn-copy">
+                <p>
+                  {el === "mobile"
+                    ? "91+ 9870699786"
+                    : "ayannagori44@gmail.com"}
+                </p>
+                <span>Text Copied!</span>
+              </h6>
+
+              <lottie-player
+                src="https://assets9.lottiefiles.com/packages/lf20_ahrbr631.json"
+                background="transparent"
+                speed="1.5"
+              ></lottie-player>
+            </div>
+          );
+        })}
         <ReactTooltip
           styles={{ position: "absolute", top: 0, left: 0 }}
           ref={currentTooltip}

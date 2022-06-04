@@ -22,6 +22,7 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    position: relative;
 
     margin: 1rem 0;
     padding: 1rem;
@@ -133,4 +134,45 @@
     width: 100%;
     margin: 1rem 0;
   }
+}
+
+.btn-copy {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 40px;
+  width: 100%;
+  position: relative;
+
+  p {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: 600 !important;
+    transition: 0.3s;
+    &.active {
+      transform: translateY(90%);
+    }
+  }
+  span {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-180%);
+    font-weight: 600 !important;
+    transition: 0.3s;
+    &.active {
+      transform: translateY(-50%);
+    }
+  }
+}
+
+lottie-player {
+  position: absolute;
+  bottom: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 240px;
+  z-index: 99;
 }
