@@ -79,7 +79,7 @@
   justify-content: center;
 
   & > svg {
-    color: var(--white-color);
+    fill: var(--white-color) !important;
     width: 75%;
     height: 75%;
   }
@@ -87,7 +87,7 @@
   .app__navbar-list {
     position: fixed;
     top: 0;
-    right: 0;
+    right: -102%;
 
     padding: 1rem;
 
@@ -104,6 +104,11 @@
     background-size: cover;
     background-repeat: repeat;
     box-shadow: 0 0 20px rgba(168, 168, 168, 0.15);
+    transition: 0.4s ease-out;
+
+    &.active {
+      right: 0;
+    }
 
     & > svg {
       width: 35px;

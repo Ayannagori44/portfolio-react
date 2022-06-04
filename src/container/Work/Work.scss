@@ -1,11 +1,11 @@
 .app__work-filter {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 
-  margin: 4rem 0 2rem;
+  margin: 4rem auto 2rem auto;
 
   .app__work-filter-item {
     background-color: #fff;

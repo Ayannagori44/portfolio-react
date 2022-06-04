@@ -78,7 +78,7 @@ const Work = () => {
                     }}
                     className=" app__flex"
                   >
-                    <AiFillEye />
+                    <AiFillEye fill="var(--white-color)" />
                   </motion.div>
                 </a>
                 <a href={work.codeLink} target="_blank" rel="noreferrer">
@@ -90,7 +90,7 @@ const Work = () => {
                     }}
                     className=" app__flex"
                   >
-                    <AiFillGithub />
+                    <AiFillGithub fill="var(--white-color)" />
                   </motion.div>
                 </a>
               </motion.div>
