@@ -1,34 +1,31 @@
 export const data = [
   {
     name: "sass",
-    bgColor: "#97caef",
+    bgColor: "#F9ACB1",
   },
   {
     name: "figma",
-    bgColor: "#faf6aa",
+    bgColor: "#CAF1DE",
   },
-  {
-    name: "graphql",
-    bgColor: "#3feee6",
-  },
+
   {
     name: "html",
-    bgColor: "#C0DFD9",
+    bgColor: "#3297FE",
   },
   {
     name: "css",
-    bgColor: "#41b3a3",
+    bgColor: "#C8E7F1",
   },
   {
     name: "javascript",
-    bgColor: "#545B5A",
+    bgColor: "#F7D8BA",
   },
   {
     name: "react",
     bgColor: "#2f2fa2",
   },
   {
-    name: "node",
-    bgColor: "#E9ECE6",
+    name: "git",
+    bgColor: "#CAF1DE",
   },
 ];

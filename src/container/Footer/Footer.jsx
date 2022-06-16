@@ -80,7 +80,7 @@ const Footer = () => {
               <lottie-player
                 src="https://assets9.lottiefiles.com/packages/lf20_ahrbr631.json"
                 background="transparent"
-                speed="1.5"
+                speed="2"
               ></lottie-player>
             </div>
           );
