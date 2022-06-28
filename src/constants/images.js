@@ -17,7 +17,18 @@ import profile from "../assets/profile.png";
 import circle from "../assets/circle.svg";
 import logoLight from "../assets/logo-light.png";
 
+import bankist from "../assets/bankist.png";
+import pickgame from "../assets/pickgame.png";
+import logify from "../assets/logify.png";
+import oldportfolio from "../assets/oldportfolio.png";
+import guessthenum from "../assets/guessthenum.png";
+
 export default {
+  bankist,
+  pickgame,
+  logify,
+  oldportfolio,
+  guessthenum,
   email,
   mobile,
   css,

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import { motion } from "framer-motion";
 import { AppWrap } from "../../wrapper";
+import { images } from "../../constants";
 import { data } from "../../data/work-data";
 
 import "./Work.scss";
@@ -58,7 +59,8 @@ const Work = () => {
         {filterWork.map((work, index) => (
           <div className="app__work-item app__flex" key={index}>
             <div className="app__work-img">
-              <img src={work.imgname} alt={work.name} />
+              {console.log(images.bankist)}
+              <img src={images[work.imgname]} alt={work.name} />
 
               <motion.div
                 whileHover={{ opacity: [0, 1] }}

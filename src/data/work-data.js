@@ -1,57 +1,42 @@
 export const data = [
   {
-    name: "portfolio",
-    title: "portfolio",
-    description:
-      "Hello there my name is ayan nagori and i am writing this by myself because lorem ipsum is too boring and this is much better.",
-    projectLink: "https://saifgehlot.netlify.app",
-    codeLink: "https://github.com/ayannagori44",
-    tags: ["All", "React JS"],
-    imgname:
-      "https://dummyimage.com/400x400/e5e5e5/473c47&text=This+is+a+dummy+image",
+    title: `Old Portfolio`,
+    description: `This is a website I create for my first client. Which I get When I was Freelancing on truelancer.com, the design is from stripe.com`,
+    projectLink: `https://ayannagorioldportfolio.netlify.app/`,
+    codeLink: "https://github.com/Ayannagori44/old-portfolio-static",
+    tags: [`All`, `UI/UX`],
+    imgname: `oldportfolio`,
   },
   {
-    name: "portfolio",
-    title: "portfolio",
-    description:
-      "Hello there my name is ayan nagori and i am writing this by myself because lorem ipsum is too boring and this is much better.",
-    projectLink: "https://saifgehlot.netlify.app",
-    codeLink: "https://github.com/ayannagori44",
-    tags: ["All"],
-    imgname:
-      "https://dummyimage.com/400x400/e5e5e5/473c47&text=This+is+a+dummy+image",
+    title: `Logify`,
+    description: `This is a website I create for my first client. Which I get When I was Freelancing on truelancer.com, the design is from stripe.com`,
+    projectLink: `https://logify.pw`,
+    codeLink: null,
+    tags: [`All`, `UI/UX`],
+    imgname: `logify`,
   },
   {
-    name: "portfolio",
-    title: "portfolio",
-    description:
-      "Hello there my name is ayan nagori and i am writing this by myself because lorem ipsum is too boring and this is much better.",
-    projectLink: "https://saifgehlot.netlify.app",
-    codeLink: "https://github.com/ayannagori44",
-    tags: ["All", "Web App"],
-    imgname:
-      "https://dummyimage.com/400x400/e5e5e5/473c47&text=This+is+a+dummy+image",
+    title: `Bankist`,
+    description: `This is a minimal finance themes website. I made this when I was learning a course from udemy. the course and design is by jonasschmedtmann.`,
+    projectLink: `https://bankist-webdesign.netlify.app/`,
+    codeLink: `https://github.com/Ayannagori44/bankist-website`,
+    tags: [`All`, `UI/UX`],
+    imgname: `bankist`,
   },
   {
-    name: "portfolio",
-    title: "portfolio",
-    description:
-      "Hello there my name is ayan nagori and i am writing this by myself because lorem ipsum is too boring and this is much better.",
-    projectLink: "https://saifgehlot.netlify.app",
-    codeLink: "https://github.com/ayannagori44",
-    tags: ["All", "React JS"],
-    imgname:
-      "https://dummyimage.com/400x400/e5e5e5/473c47&text=This+is+a+dummy+image",
+    title: `Guess The Number`,
+    description: `This is a minimal finance themes website. I made this when I was learning a course from udemy. the course and design is by jonasschmedtmann.`,
+    projectLink: `https://choosethenumgame.netlify.app/`,
+    codeLink: `https://github.com/Ayannagori44/guess-the-number-game`,
+    tags: [`All`, `javascript project`],
+    imgname: `guessthenum`,
   },
   {
-    name: "portfolio",
-    title: "portfolio",
-    description:
-      "Hello there my name is ayan nagori and i am writing this by myself because lorem ipsum is too boring and this is much better.",
-    projectLink: "https://saifgehlot.netlify.app",
-    codeLink: "https://github.com/ayannagori44",
-    tags: ["All", "UI/UX"],
-    imgname:
-      "https://dummyimage.com/400x400/e5e5e5/473c47&text=This+is+a+dummy+image",
+    title: `Pick Game`,
+    description: `This is a 2 player javascript game. The goal is to make 100 points before your opponent player. And that by Rolling dice. If the dice number is 1 then you will lose your all your current points.`,
+    projectLink: `https://pick-game.netlify.app/`,
+    codeLink: `https://github.com/Ayannagori44/pick-game`,
+    tags: [`All`, `UI/UX`, `javascript project`],
+    imgname: `pickgame`,
   },
 ];
