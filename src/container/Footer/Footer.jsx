@@ -20,7 +20,7 @@ const Footer = () => {
     textArea.style.position = "absolute";
     textArea.style.top = "0";
     textArea.style.opacity = "0";
-    textArea.value = button.textContent;
+    textArea.value = button.textContent.replace("Text Copied!", "");
     document.body.appendChild(textArea);
     textArea.select();
     document.execCommand("copy");
