@@ -3,24 +3,27 @@ export const data = [
     image: "about01",
     title: "Web developer",
     description:
-      "Hello there I am a big big big web developer defintly hire me",
+      "Started my coding with Html and Css. after mastering them I moved to javascript. this portfolio is my first react project",
   },
   {
     image: "about02",
 
     title: "Web designer",
-    description: "Hello there I also a big big web designer defintly hire me",
-  },
-  {
-    image: "about03",
-
-    title: "Blogger",
-    description: "Hello there I also a big big Blogger defintly hire me",
+    description:
+      "After learning Html and Css I made quite beautiful and modern UI/UX and then I was intrested in web design and Learned figma and some other designing tools",
   },
   {
     image: "about04",
 
-    title: "Video Editor",
-    description: "Hello there I also a big big Video Editor defintly hire me",
+    title: "Freelancer",
+    description:
+      "I also did some freelancing. But I dont really like working on small projects and I like complex projects more. But I do some freelancing at truelancer.com",
+  },
+  {
+    image: "about03",
+
+    title: "Student",
+    description:
+      "I started my coding journey when I was a student(13 Age). I mostly conding in my pandemic holidays and this portfolio is also made in those days",
   },
 ];

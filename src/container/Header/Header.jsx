@@ -1,5 +1,5 @@
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useRef, useEffect } from "react";
+import { motion, useScroll } from "framer-motion";
 import { images } from "../../constants";
 
 import { AppWrap } from "../../wrapper";
@@ -18,6 +18,16 @@ const scaleVariants = {
 };
 
 const Header = () => {
+  const firstImage = useRef();
+
+  useEffect(() => {
+    window.addEventListener("scroll", (e) => {
+      firstImage.current.style.transform = `translate(-50% ,-${
+        window.pageYOffset * 1.5
+      }px)`;
+    });
+  }, []);
+
   return (
     <div className="app__header app__flex">
       <motion.div
@@ -50,14 +60,7 @@ const Header = () => {
         transition={{ duration: 0.5, delayChildren: 0.2 }}
         className="app__header-img"
       >
-        <img src={images.profile} alt="Profile pic" />
-        <motion.img
-          whileInView={{ scale: [0, 1] }}
-          transition={{ duration: 1, ease: "easeInOut" }}
-          className="overlay_circle"
-          src={images.circle}
-          alt="circle for profile bg"
-        ></motion.img>
+        <img ref={firstImage} src={images.text} alt="Hero Text" />
       </motion.div>
 
       {/* -------------------------------- */}

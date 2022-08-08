@@ -5,6 +5,8 @@
   background-repeat: repeat;
   background-position: center;
 
+  overflow: hidden;
+
   .app-wrapper {
     padding: 0;
 
@@ -18,6 +20,7 @@
   flex: 1;
   height: 100%;
   width: 100%;
+  justify-content: space-between !important;
   flex-direction: row;
   padding: 6rem 2rem 0;
 
@@ -27,24 +30,30 @@
   @media screen and (max-width: 1200px) {
     flex-direction: column;
   }
-  @media screen and (man-width: 450px) {
-    padding: 6rem 1rem 2rem;
+  @media screen and (max-width: 450px) {
+    padding: 6rem 0rem 0rem 0;
   }
 }
 
 .app__header-info {
-  width: 100%;
-  flex: 0.65;
+  width: 33%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   height: 100%;
+  @media screen and (max-width: 450px) {
+    width: 100% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .app__header-badge {
   width: 100% !important;
   display: flex;
+
   align-items: flex-end;
   flex-direction: column;
 
@@ -88,7 +97,7 @@
 }
 
 .app__header-circles {
-  flex: 0.75;
+  width: 25%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -117,6 +126,10 @@
   div:nth-child(3) {
     width: 75px;
     height: 75px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    margin-top: 16rem !important;
   }
 
   @media screen and (min-width: 2000px) {
@@ -149,25 +162,37 @@
 }
 
 .app__header-img {
-  flex: 1;
-  height: 100%;
-
+  height: 100% !important;
+  width: 50% !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  position: relative;
-
+  transform: translate(-50%, -50%) !important;
+  -webkit-transform: translate(-50%, -50%) !important;
+  -moz-transform: translate(-50%, -50%) !important;
+  -ms-transform: translate(-50%, -50%) !important;
+  -o-transform: translate(-50%, -50%) !important;
+  ////
   img {
-    width: 100%;
+    width: 220px;
     object-fit: contain;
     z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -26%);
+    -webkit-transform: translate(-50%, -26%);
+    -moz-transform: translate(-50%, -26%);
+    -ms-transform: translate(-50%, -26%);
+    -o-transform: translate(-50%, -26%);
   }
 
-  .overlay_circle {
-    position: absolute;
-    z-index: 0;
-  }
-  @media screen and (man-width: 1200px) {
+  @media screen and (max-width: 1200px) {
+    z-index: -1;
     margin: 2.5rem 0;
+    border: 2px solid red;
   }
 }

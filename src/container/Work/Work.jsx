@@ -59,7 +59,6 @@ const Work = () => {
         {filterWork.map((work, index) => (
           <div className="app__work-item app__flex" key={index}>
             <div className="app__work-img">
-              {console.log(images.bankist)}
               <img src={images[work.imgname]} alt={work.name} />
 
               <motion.div
