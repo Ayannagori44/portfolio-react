@@ -4,7 +4,7 @@ export const data = [
     description: `This is my first, old and really simple portfolio. Made from static Html and Css. Inspiration is taken from a WIX template and I made design by myslef in figma. `,
     projectLink: `https://weather-app-by-ayan.netlify.app/`,
     codeLink: "https://github.com/Ayannagori44/weather-web-app",
-    tags: [`All`, `UI/UX`],
+    tags: [`All`, `UI/UX`, `Web App`],
     imgname: `weather`,
   },
   {
@@ -18,7 +18,7 @@ export const data = [
   {
     title: `Logify`,
     description: `This is a website I create for my first client. Which I get When I was Freelancing on truelancer.com, the design is quite similar to stripe.com. Made from static Html and Css`,
-    projectLink: `https://logify.pw`,
+    projectLink: `https://logify.id`,
     codeLink: null,
     tags: [`All`, `UI/UX`],
     imgname: `logify`,

@@ -17,13 +17,13 @@ export const data = [
 
     title: "Freelancer",
     description:
-      "I also did some freelancing. But I dont really like working on small projects and I like complex projects more. But I do some freelancing at truelancer.com",
+      "I also did some freelancing. made a project(named logify) for a client on a website called truelancer.com, I earned my first earnings from there",
   },
   {
     image: "about03",
 
     title: "Student",
     description:
-      "I started my coding journey when I was a student(13 Age). I mostly conding in my pandemic holidays and this portfolio is also made in those days",
+      "I started my coding journey when I was a student(13 Age). I mostly started this in pandemic holidays and this portfolio is also made in those days",
   },
 ];
