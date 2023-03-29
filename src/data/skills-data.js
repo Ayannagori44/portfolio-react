@@ -7,7 +7,6 @@ export const data = [
     name: "figma",
     bgColor: "#CAF1DE",
   },
-
   {
     name: "html",
     bgColor: "#3297FE",
